@@ -30,6 +30,12 @@
     <ClCompile Include="Puntatori.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
+    <ClCompile Include="EserciziLezione2.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="TipiBase.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="IntroCPP.h">
@@ -42,6 +48,9 @@
       <Filter>File di origine</Filter>
     </ClInclude>
     <ClInclude Include="Puntatori.h">
+      <Filter>File di origine</Filter>
+    </ClInclude>
+    <ClInclude Include="TipiBase.h">
       <Filter>File di origine</Filter>
     </ClInclude>
   </ItemGroup>

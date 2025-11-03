@@ -18,7 +18,7 @@ class Mese
 {
 public: 
 
-	Mese() {};
+	Mese();
 
 	GiorniSettimana giornoAttuale = Lunedì;
 
@@ -75,7 +75,7 @@ public:
 		return a == valore; // Operatore di uguaglianza ==
 	}
 
-	bool SonoDiversi(int valore) {
+	inline bool SonoDiversi(int valore) {
 		return a != valore; // Operatore di diversità !=
 	}
 
@@ -172,6 +172,16 @@ public:
 
 	int ShiftDestra(int posizioni) {
 		return a >> posizioni; // Operatore di shift a destra >>
+	}
+
+	void EsempioIncremento() {
+		// esempio operatore incremento
+		Mese* meseCorrente = new Mese();
+		int giorno = 0;
+
+		giorno = meseCorrente->Incrementa();
+
+		std::cout << "Valore giorno: " << giorno << std::endl;
 	}
 
 };

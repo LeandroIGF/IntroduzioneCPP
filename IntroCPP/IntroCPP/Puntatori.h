@@ -1,10 +1,23 @@
 #pragma once
 #include"StruttureDiControllo.h"
+#include <string>
+#include <vector>
+
+using namespace std;
 
 class Weapon
 {
 public:
+
 	Weapon();
+
+	Weapon(int InitDamage, string InitName) {
+
+		this->weaponDamage = InitDamage;
+		this->name = InitName;
+
+	};
+
 	~Weapon();
 
 	int value = 42;
@@ -21,16 +34,33 @@ public:
 
 	int Damage(int danno, int multiplier, int *totaldamage);
 
+	int weaponDamage;
+
+	string name = " ";
+
 	int DamageRef(int danno, int multiplier, int& totaldamage);
 
 	void setCalcolatrice(Calcolatrice* calcolatrice);
 
+	void esempioPuntatori();
+
+	string getName() { return name; }
 
 private:
 
 	int HP = 100;
 
+protected:
+
 	
 
+};
+
+class Esercizio7 {
+	private:
+		vector<string> colori = { "rosso", "verde", "blu", "giallo", "viola" };
+
+	public:
+		void ForEach();
 };
 

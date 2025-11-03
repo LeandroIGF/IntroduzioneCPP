@@ -50,3 +50,27 @@ void Weapon::setCalcolatrice(Calcolatrice* calcolatrice)
 {
 	this->calcolatricePointer = calcolatrice;
 }
+
+void Weapon::esempioPuntatori()
+{
+	Weapon* spada = new Weapon();
+
+	spada->initPointers();
+
+	delete spada;
+	spada = nullptr;
+
+	if (spada == nullptr)
+	{
+		std::cout << "Puntatore spada è nullptr dopo delete." << std::endl;
+	}
+	else
+	{
+		spada->initPointers();
+	}
+}
+
+void Esercizio7::ForEach()
+{
+	return;
+}
