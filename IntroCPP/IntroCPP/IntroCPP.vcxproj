@@ -128,6 +128,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Operatori.cpp" />
     <ClCompile Include="Puntatori.cpp" />
+    <ClCompile Include="Static.cpp" />
     <ClCompile Include="StruttureDiControllo.cpp" />
     <ClCompile Include="TipiBase.cpp" />
   </ItemGroup>
@@ -135,6 +136,7 @@
     <ClInclude Include="IntroCPP.h" />
     <ClInclude Include="Operatori.h" />
     <ClInclude Include="Puntatori.h" />
+    <ClInclude Include="Static.h" />
     <ClInclude Include="StruttureDiControllo.h" />
     <ClInclude Include="TipiBase.h" />
   </ItemGroup>

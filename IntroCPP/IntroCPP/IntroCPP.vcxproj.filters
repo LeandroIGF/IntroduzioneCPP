@@ -36,6 +36,9 @@
     <ClCompile Include="TipiBase.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
+    <ClCompile Include="Static.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="IntroCPP.h">
@@ -51,6 +54,9 @@
       <Filter>File di origine</Filter>
     </ClInclude>
     <ClInclude Include="TipiBase.h">
+      <Filter>File di origine</Filter>
+    </ClInclude>
+    <ClInclude Include="Static.h">
       <Filter>File di origine</Filter>
     </ClInclude>
   </ItemGroup>

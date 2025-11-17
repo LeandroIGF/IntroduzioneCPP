@@ -4,6 +4,7 @@
 
 #include "Operatori.h"
 #include "Puntatori.h"
+#include "Static.h"
 
 using namespace std;
 
@@ -60,6 +61,22 @@ int main()
 
 	delete esercizio7;
 	esercizio7 = nullptr;
+
+	// STATIC
+
+	Static* s1 = new Static();
+	Static* s2 = new Static();
+	Static* s3 = new Static();
+
+	delete s1;
+	s1 = nullptr;
+
+	cout << Static::count << endl;
+
+	delete s2;
+	s2 = nullptr;
+
+	cout << Static::getCount() << endl;
 
 	return 0;
 }
