@@ -1,11 +1,12 @@
 #pragma once
 #include"StruttureDiControllo.h"
+#include "Interfaccia.h"
 #include <string>
 #include <vector>
 
 using namespace std;
 
-class Weapon
+class Weapon : public IInterfaccia
 {
 public:
 
@@ -46,6 +47,11 @@ public:
 
 	string getName() { return name; }
 
+	// implementazione dell'interfaccia
+	void interact() override;
+
+	void displayMessage() override;
+
 private:
 
 	int HP = 100;
@@ -64,3 +70,9 @@ class Esercizio7 {
 		void ForEach();
 };
 
+
+class WeaponTrace : public Weapon//, public IInterfaccia
+{
+
+
+};

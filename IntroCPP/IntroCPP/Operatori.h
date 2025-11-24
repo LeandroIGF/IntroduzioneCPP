@@ -1,6 +1,7 @@
 #pragma once
 
 #include <iostream>
+#include "Interfaccia.h"
 
 
 enum GiorniSettimana
@@ -14,9 +15,12 @@ enum GiorniSettimana
 	Domenica
 };
 
-class Mese
+class Mese : public IInterfaccia
 {
 public: 
+
+	//implementazione dei metodi dell'interfaccia IInterfaccia
+	void interact() override;
 
 	Mese();
 

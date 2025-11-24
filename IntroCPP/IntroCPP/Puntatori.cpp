@@ -70,6 +70,18 @@ void Weapon::esempioPuntatori()
 	}
 }
 
+void Weapon::interact()
+{
+	std::cout << "interagito con la nostra weapon" << std::endl;
+}
+
+void Weapon::displayMessage()
+{
+	__super::displayMessage();
+
+	std::cout << "Messaggio dalla classe derivata Weapon." << std::endl;
+}
+
 void Esercizio7::ForEach()
 {
 	return;

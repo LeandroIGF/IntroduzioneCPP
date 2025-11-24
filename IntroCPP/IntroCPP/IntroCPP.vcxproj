@@ -124,6 +124,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="EserciziLezione2.cpp" />
+    <ClCompile Include="Interfaccia.cpp" />
     <ClCompile Include="IntroCPP.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Operatori.cpp" />
@@ -133,6 +134,7 @@
     <ClCompile Include="TipiBase.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Interfaccia.h" />
     <ClInclude Include="IntroCPP.h" />
     <ClInclude Include="Operatori.h" />
     <ClInclude Include="Puntatori.h" />

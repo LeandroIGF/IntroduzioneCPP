@@ -78,5 +78,33 @@ int main()
 
 	cout << Static::getCount() << endl;
 
+	// Interfaccia example
+
+	Weapon* w1 = new Weapon(25, "ak47");
+	Mese* m1 = new Mese();
+
+	IInterfaccia* i1 = w1;
+	IInterfaccia* i2 = m1;
+
+	i1->interact();
+
+	i1->displayMessage();
+
+	i2->interact();
+
+	i1 = nullptr;
+	i2 = nullptr;
+
+	delete w1;
+	delete m1;
+	w1 = nullptr;
+	m1 = nullptr;
+
+	
+
+
+
+
+
 	return 0;
 }
