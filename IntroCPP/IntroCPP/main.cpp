@@ -5,6 +5,7 @@
 #include "Operatori.h"
 #include "Puntatori.h"
 #include "Static.h"
+#include "Delegate.h"
 
 using namespace std;
 
@@ -100,10 +101,48 @@ int main()
 	w1 = nullptr;
 	m1 = nullptr;
 
+	// DELEGATE
+
+	Delegate* delegate = new Delegate();
+	Weapon* w2 = new Weapon(40, "Sniper");
+	Weapon* w3 = new Weapon(60, "Pistol");
+
+	//bind di weapon al nostro delegate
+	delegate->onOverlap = std::bind(&Weapon::initPointers, w2);
+
+	// bind di piu funzioni al nostro delegate
+	delegate->subscribers.push_back(std::bind(&Weapon::initPointers, w2));
+	delegate->subscribers.push_back(std::bind(&Weapon::initPointers, w3));
+
+	// variabile automatica lambda che contiene il bind e successivamente passata al delegate
+	auto lambda = std::bind(&Weapon::initPointers, w2);
+
+	delegate->SetOverlapEvent(lambda);
+	//delegate->onCalculateValue = std::bind(&Weapon::calculateDamage, &w2, std::placeholders::_1, std::placeholders::_2);
 	
+	cout << "Calling directly the delegate function" << endl;
+	delegate->onOverlap();
 
+	cout << "Calling Single overlap event" << endl;
+	cout << endl;
+	cout << endl;
+	delegate->OverlapEvent();
+	cout << endl;
 
+	cout << "Calling Multiple overlap event" << endl;
+	cout << endl;
+	cout << endl;
+	delegate->MultipleOverlapEvents();
+	cout << endl;
 
+	delete delegate;
+	delegate = nullptr;
+
+	delete w2;
+	w2 = nullptr;
+
+	delete w3;
+	w3 = nullptr;
 
 
 	return 0;

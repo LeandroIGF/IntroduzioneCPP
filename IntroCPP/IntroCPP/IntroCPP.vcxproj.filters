@@ -42,6 +42,9 @@
     <ClCompile Include="Interfaccia.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
+    <ClCompile Include="Delegate.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="IntroCPP.h">
@@ -63,6 +66,9 @@
       <Filter>File di origine</Filter>
     </ClInclude>
     <ClInclude Include="Interfaccia.h">
+      <Filter>File di origine</Filter>
+    </ClInclude>
+    <ClInclude Include="Delegate.h">
       <Filter>File di origine</Filter>
     </ClInclude>
   </ItemGroup>
